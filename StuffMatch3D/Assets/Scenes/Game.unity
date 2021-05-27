@@ -9368,8 +9368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8572557ba95fc4ae5a67d89732a5ac7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeartCount: 2
-  secondsBeforeNextHeart: 180
+  HeartCount: 3
+  secondsBeforeNextHeart: 600
   lifeLeftText: {fileID: 1847005899}
   heart1: {fileID: 1063255792}
   heart2: {fileID: 1277424351}
@@ -9425,13 +9425,13 @@ MonoBehaviour:
   levelNumber: 0
   levelSet:
   - isTutorial: 0
+    LevelNumber: 0
     LevelTime: 0
     PairNumber: 0
-    LevelNumber: 0
   - isTutorial: 0
+    LevelNumber: 0
     LevelTime: 0
     PairNumber: 0
-    LevelNumber: 0
 --- !u!1 &1502466477
 GameObject:
   m_ObjectHideFlags: 0
