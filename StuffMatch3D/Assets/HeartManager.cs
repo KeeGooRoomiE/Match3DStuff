@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +13,7 @@ public class HeartManager : MonoBehaviour
     public HeartIcon heart2;
     public HeartIcon heart3;
     public Button menuPlayButton;
-    //private int timestamp;
+    public Button failRestartButton;
     private int counter;
     private bool isCountdowning;
 
@@ -21,7 +21,7 @@ public class HeartManager : MonoBehaviour
     void Start()
     {
         RestartCounter();
-        StartCoroutine(Countdown());
+        StartCoroutine(HeartCountdown());
     }
 
     // Update is called once per frame
@@ -70,12 +70,12 @@ public class HeartManager : MonoBehaviour
         if (HeartCount<=0)
         {
             menuPlayButton.interactable = false;
+            failRestartButton.interactable = false;
         } else
         {
             menuPlayButton.interactable = true;
+            failRestartButton.interactable = true;
         }
-
-
     }
 
     public void UpdateText() {
@@ -99,7 +99,7 @@ public class HeartManager : MonoBehaviour
         }    
     }
 
-    private IEnumerator Countdown()
+    private IEnumerator HeartCountdown()
     {
         yield return new WaitForSeconds(1);
 
@@ -107,7 +107,7 @@ public class HeartManager : MonoBehaviour
         {
 
             counter -= 1;
-            StartCoroutine(Countdown());
+            StartCoroutine(HeartCountdown());
             isCountdowning = true;
 
         }
@@ -134,7 +134,7 @@ public class HeartManager : MonoBehaviour
         if (!isCountdowning)
         {
             RestartCounter();
-            StartCoroutine(Countdown());
+            StartCoroutine(HeartCountdown());
         }
 
 

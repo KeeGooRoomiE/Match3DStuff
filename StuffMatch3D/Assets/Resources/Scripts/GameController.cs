@@ -15,30 +15,30 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     [SerializeField] public SceneManager manager;
-    [SerializeField] public SelectObject selectedObj;
+    [SerializeField] public LevelManager lman;
     [SerializeField] public Transform generatorArea;
     [SerializeField] public GameObject objectsParent;
+    [SerializeField] public SelectObject selectedObj;
+    [SerializeField] public Text timeText;
     [SerializeField] public GameObject[] objects;
-    [SerializeField] public int numberOfActive;
     [SerializeField] public GameObject[] activeObjects;
+    [SerializeField] public int numberOfActive;
     [SerializeField] public int levelScore;
     [SerializeField] public int pairGenNumber;
-    [SerializeField] private bool isNeedToCreateObjects;
-    [SerializeField] public bool isTutorial;
-    [SerializeField] public Text timeText;
+    
     [SerializeField] public int levelTime;
     [SerializeField] public int currentTime;
+    [SerializeField] public bool noNeedToGen = false;
+    [SerializeField] public bool isTutorial;
     [SerializeField] public bool isGameWin;
+    [SerializeField] public bool isTimerOn = true;
+    [SerializeField] public bool isBooster1On = true;
+    [SerializeField] public bool isBooster2On = true;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        /*if (isNeedToCreateObjects == true)
-        {
-            GeneratePairs(pairGenNumber);
-        }*/
-        //StartCoroutine(Countdown());
         isGameWin = false;
     }
 
@@ -68,13 +68,45 @@ public class GameController : MonoBehaviour
 
     public void StartLevel()
     {
+        lman.SetLevel(lman.levelNumber);
         isGameWin = false;
         levelScore = 0;
         numberOfActive = 0;
-        GeneratePairs(pairGenNumber);
-        SetTime(levelTime);
-        StartCoroutine(Countdown());
+        StopCoroutine(Countdown());
+
+        if (!noNeedToGen)
+        {
+            GeneratePairs(pairGenNumber);
+        }
         
+        //make timer infinite if timer is off
+        if (!isTimerOn)
+        {
+            SetTime(99999);
+        } else
+        {
+            SetTime(levelTime);
+        }
+
+        if (!isTutorial)
+        {
+            var tut = GameObject.FindGameObjectsWithTag("Tutorial");
+            foreach (GameObject tutorial in tut)
+            {
+                tutorial.SetActive(false);
+            }
+        } else
+        {
+            switch (lman.levelNumber)
+            {
+                default: isTutorial = false; break;
+                case 1: var t1 = GameObject.FindGameObjectWithTag("Tutorial");
+                    t1.SetActive(true);
+                    break;
+            }
+        }
+
+        StartCoroutine(Countdown());
     }
 
     public void DeletePairs()
@@ -106,19 +138,9 @@ public class GameController : MonoBehaviour
         //update time
         var min = Mathf.Floor(currentTime / 60);
         var sec = currentTime - min * 60;
-
-        /*if (levelTime > 0)
-        {
-
-            levelTime -= 1;
-        }
-        else
-        {
-            //stop time and make time is out screen active
-        }*/
-        //StartCoroutine(Countdown(1));
         timeText.text = string.Format("{0:00}:{1:00}", min, sec);//min + " : " + sec;
 
+        //detrigger game win screen opening
         if (!isGameWin)
         { 
             if (pairGenNumber == levelScore)
@@ -127,6 +149,8 @@ public class GameController : MonoBehaviour
                 isGameWin = true;
             }
         }
+
+
     }
 
     private IEnumerator Countdown()
