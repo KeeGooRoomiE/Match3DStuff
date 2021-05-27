@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
     [SerializeField] public Text timeText;
     [SerializeField] public int levelTime;
     [SerializeField] public int currentTime;
+    [SerializeField] public bool isGameWin;
 
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class GameController : MonoBehaviour
             GeneratePairs(pairGenNumber);
         }*/
         //StartCoroutine(Countdown());
+        isGameWin = false;
     }
 
     // Generate number of paired objects to scene
@@ -66,10 +68,13 @@ public class GameController : MonoBehaviour
 
     public void StartLevel()
     {
+        isGameWin = false;
+        levelScore = 0;
         numberOfActive = 0;
         GeneratePairs(pairGenNumber);
         SetTime(levelTime);
         StartCoroutine(Countdown());
+        
     }
 
     public void DeletePairs()
@@ -95,6 +100,7 @@ public class GameController : MonoBehaviour
         currentTime += time;
         StartCoroutine(Countdown());
     }
+
     void Update()
     {
         //update time
@@ -113,9 +119,13 @@ public class GameController : MonoBehaviour
         //StartCoroutine(Countdown(1));
         timeText.text = string.Format("{0:00}:{1:00}", min, sec);//min + " : " + sec;
 
-        if (pairGenNumber == levelScore)
-        {
-            manager.ShowWin();
+        if (!isGameWin)
+        { 
+            if (pairGenNumber == levelScore)
+            {
+                manager.ShowWin();
+                isGameWin = true;
+            }
         }
     }
 

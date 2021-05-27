@@ -7,22 +7,28 @@ public class HeartManager : MonoBehaviour
 {
     public int HeartCount;
     public int secondsBeforeNextHeart;
-    public int curTimestamp;
+    //public int curTimestamp;
     public Text lifeLeftText;
     public HeartIcon heart1;
     public HeartIcon heart2;
     public HeartIcon heart3;
     public Button menuPlayButton;
+    //private int timestamp;
+    private int counter;
+    private bool isCountdowning;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        RestartCounter();
+        StartCoroutine(Countdown());
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateText();
+
         //first heart checkout, basic one 
         if (heart1.gameObject != null)
         {
@@ -68,6 +74,8 @@ public class HeartManager : MonoBehaviour
         {
             menuPlayButton.interactable = true;
         }
+
+
     }
 
     public void UpdateText() {
@@ -76,29 +84,60 @@ public class HeartManager : MonoBehaviour
             lifeLeftText.gameObject.SetActive(true);
             if (HeartCount < 3)
             {
-                lifeLeftText.text = "next life in ";
+                //lifeLeftText.text = "next life in ";
                 //count left time
 
-                //var min = Mathf.Floor(levelTime / 60);
-                //var sec = levelTime - min * 60;
-                //StartCoroutine(Countdown(1));
-                //timeText.text = string.Format("{0:00}:{1:00}", min, sec);//min + " : " + sec;
+                var min = Mathf.Floor(counter / 60);
+                var sec = counter - min * 60;
+                string tim = string.Format("{0:00}:{1:00}", min, sec);//min + " : " + sec;
+                lifeLeftText.text = "next life in " + tim;
             } else
             {
                 //lifeLeftText.gameObject.SetActive(false);
                 lifeLeftText.text = " ";
             }
         }    
-        
+    }
 
-        /*if (lifeLeftText.gameObject.activeSelf) {
-            
-        } else { }*/
+    private IEnumerator Countdown()
+    {
+        yield return new WaitForSeconds(1);
+
+        if (counter > 0)
+        {
+
+            counter -= 1;
+            StartCoroutine(Countdown());
+            isCountdowning = true;
+
+        }
+        else
+        {
+            isCountdowning = false;
+            IncreaseHeartCount(1);
+            if (HeartCount < 3)
+            {
+                RestartCounter();
+            }
+        }
+
+    }
+
+    private void RestartCounter()
+    {
+        counter = secondsBeforeNextHeart;
     }
 
     public void DecreaseHeartCount() {
         HeartCount -= 1;
         Debug.Log("heart count decreased to a value: " + HeartCount + " via Controller function");
+        if (!isCountdowning)
+        {
+            RestartCounter();
+            StartCoroutine(Countdown());
+        }
+
+
     }
 
     public void IncreaseHeartCount(int amount)

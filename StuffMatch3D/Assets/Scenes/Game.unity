@@ -9292,9 +9292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8572557ba95fc4ae5a67d89732a5ac7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeartCount: 1
-  secondsBeforeNextHeart: 0
-  curTimestamp: 0
+  HeartCount: 2
+  secondsBeforeNextHeart: 180
   lifeLeftText: {fileID: 1847005899}
   heart1: {fileID: 1063255792}
   heart2: {fileID: 1277424351}
@@ -11688,12 +11687,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   levelScore: 0
-  pairGenNumber: 64
+  pairGenNumber: 4
   isNeedToCreateObjects: 1
   isTutorial: 0
   timeText: {fileID: 2037774540}
-  levelTime: 10
+  levelTime: 35
   currentTime: 0
+  isGameWin: 0
 --- !u!4 &1728226344
 Transform:
   m_ObjectHideFlags: 0
@@ -12336,7 +12336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1847005898
 RectTransform:
   m_ObjectHideFlags: 0
