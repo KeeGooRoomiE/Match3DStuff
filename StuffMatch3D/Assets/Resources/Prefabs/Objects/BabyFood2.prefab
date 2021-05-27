@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 1047168236639456889}
   - component: {fileID: 2070913780398209718}
   - component: {fileID: 4401013657277259527}
+  - component: {fileID: 4334963862371103167}
   m_Layer: 0
   m_Name: BabyFood2
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,3 +227,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3626754697841867823, guid: 0b7ac53e3ae6ca242a696a889b13110b, type: 3}
+--- !u!114 &4334963862371103167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4335790667894236302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

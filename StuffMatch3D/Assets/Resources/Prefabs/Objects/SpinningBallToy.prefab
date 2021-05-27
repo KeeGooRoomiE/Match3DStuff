@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 854812246474669485}
   - component: {fileID: 8981698015958118076}
   - component: {fileID: 4974790827828635455}
+  - component: {fileID: 8178219727322790025}
   m_Layer: 0
   m_Name: SpinningBallToy
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,3 +227,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7105393143119517127, guid: 799a9f4b1b09b9b4292fae6e764dc7ff, type: 3}
+--- !u!114 &8178219727322790025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617001940927539189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

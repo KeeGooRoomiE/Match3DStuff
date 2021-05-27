@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 5848355258152675246}
   - component: {fileID: 4672773772026247055}
   - component: {fileID: 6960015585569713639}
+  - component: {fileID: 2862368698478757786}
   m_Layer: 0
   m_Name: candyblue
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a9ce03d9aed4906a4b00bcca25f384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2862368698478757786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292701903875330494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

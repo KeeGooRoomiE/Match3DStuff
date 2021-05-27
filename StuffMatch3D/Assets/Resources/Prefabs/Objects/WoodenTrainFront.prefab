@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1539048386779651896}
   - component: {fileID: 2974497464846062809}
   - component: {fileID: 180487793414614406}
+  - component: {fileID: -9105083695885226113}
   m_Layer: 0
   m_Name: WoodenTrainFront
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5316941973121175553, guid: dc6a99a587dea8c45b12db70757e08fd, type: 3}
+--- !u!114 &-9105083695885226113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649222280414804711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

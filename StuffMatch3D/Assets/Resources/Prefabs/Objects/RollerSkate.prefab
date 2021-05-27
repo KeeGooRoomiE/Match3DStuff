@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 8275351077025757165}
   - component: {fileID: 6436155024445110953}
   - component: {fileID: 3630032052063257621}
+  - component: {fileID: -9041552211362255752}
   m_Layer: 0
   m_Name: RollerSkate
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -229,6 +230,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2918093826863877530, guid: 74d149a51b4adca4f926a4be587be8b5, type: 3}
+--- !u!114 &-9041552211362255752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139964306741246732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &2206546688170647088
 GameObject:
   m_ObjectHideFlags: 0

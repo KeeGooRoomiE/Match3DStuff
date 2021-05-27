@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1143177047857728784}
   - component: {fileID: 6141673707877567478}
   - component: {fileID: 6941195827399658947}
+  - component: {fileID: -2838389300319908645}
   m_Layer: 0
   m_Name: Basketball
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5407291142626557916, guid: af7ee3dde2d6aab4184f28fac36eafb2, type: 3}
+--- !u!114 &-2838389300319908645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6616852066426839884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

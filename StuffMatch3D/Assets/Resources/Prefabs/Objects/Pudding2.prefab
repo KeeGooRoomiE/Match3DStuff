@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 6803856826285903370}
   - component: {fileID: 527693414951656003}
   - component: {fileID: 5435566199601043153}
+  - component: {fileID: 5599507772391759837}
   m_Layer: 0
   m_Name: Pudding2
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: cf77aa2bb1fbe426b8d23898871d4525, type: 3}
+--- !u!114 &5599507772391759837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186928602450693339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

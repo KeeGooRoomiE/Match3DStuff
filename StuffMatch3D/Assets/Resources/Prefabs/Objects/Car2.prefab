@@ -339,9 +339,10 @@ GameObject:
   - component: {fileID: 4618024013054419056}
   - component: {fileID: 7579995400184810926}
   - component: {fileID: 2295737324433960389}
+  - component: {fileID: -1958336188179704339}
   m_Layer: 0
   m_Name: Car2
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,3 +473,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4967082104771753876, guid: 6a2bafb17b54ec84685a430b1fd2d302, type: 3}
+--- !u!114 &-1958336188179704339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8769801698776485843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

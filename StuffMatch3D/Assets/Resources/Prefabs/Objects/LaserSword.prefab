@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8977728981343406673}
   - component: {fileID: 5951429918535964145}
   - component: {fileID: 5891257221093891537}
+  - component: {fileID: 1190807190895919618}
   m_Layer: 0
   m_Name: LaserSword
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +146,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9121872391760977178, guid: f7952bcfaa1f47e44b5d6850fb0887b5, type: 3}
+--- !u!114 &1190807190895919618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218595152549229080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

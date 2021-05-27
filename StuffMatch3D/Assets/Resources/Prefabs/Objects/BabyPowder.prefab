@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 2101536168778211914}
   - component: {fileID: 4732743804916586669}
   - component: {fileID: 1467471474900687419}
+  - component: {fileID: -1884103300155965125}
   m_Layer: 0
   m_Name: BabyPowder
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,6 +146,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4754986591691301113, guid: b6eff50952fc536409944c8323307664, type: 3}
+--- !u!114 &-1884103300155965125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791990609511393227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &9028114888396171159
 GameObject:
   m_ObjectHideFlags: 0

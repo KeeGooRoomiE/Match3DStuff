@@ -94,9 +94,10 @@ GameObject:
   - component: {fileID: 3221771562211711485}
   - component: {fileID: 6779900338611066742}
   - component: {fileID: 2530231247836446725}
+  - component: {fileID: 1509634122724710156}
   m_Layer: 0
   m_Name: cakechoco
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +130,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 5dcb2c862a30543a59664f17ef1ff9db, type: 3}
 --- !u!54 &3221771562211711485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -175,3 +176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a9ce03d9aed4906a4b00bcca25f384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1509634122724710156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633492750079639432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

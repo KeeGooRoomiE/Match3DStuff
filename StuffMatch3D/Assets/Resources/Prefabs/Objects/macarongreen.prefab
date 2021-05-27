@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 3258867107170810944}
   - component: {fileID: 4700733123246284879}
   - component: {fileID: 6361754845906957798}
+  - component: {fileID: -3356958868707493121}
   m_Layer: 0
   m_Name: macarongreen
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1a46f173f3b8745469bfe1c6b52701a8, type: 3}
+--- !u!114 &-3356958868707493121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7363180343238229477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

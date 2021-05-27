@@ -14,38 +14,40 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] public GameObject timeIsOutScreen;
-    [SerializeField] public GameObject winScreen;
-    [SerializeField] public GameObject failScreen;
-    [SerializeField] public GameObject bkg;
+    [SerializeField] public SceneManager manager;
     [SerializeField] public SelectObject selectedObj;
     [SerializeField] public Transform generatorArea;
     [SerializeField] public GameObject objectsParent;
     [SerializeField] public GameObject[] objects;
+    [SerializeField] public int numberOfActive;
+    [SerializeField] public GameObject[] activeObjects;
     [SerializeField] public int levelScore;
     [SerializeField] public int pairGenNumber;
     [SerializeField] private bool isNeedToCreateObjects;
     [SerializeField] public bool isTutorial;
     [SerializeField] public Text timeText;
     [SerializeField] public int levelTime;
+    [SerializeField] public int currentTime;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if (isNeedToCreateObjects == true)
+        /*if (isNeedToCreateObjects == true)
         {
             GeneratePairs(pairGenNumber);
-        }
-        StartCoroutine(Countdown());
+        }*/
+        //StartCoroutine(Countdown());
     }
 
     // Generate number of paired objects to scene
-    void GeneratePairs(int numberOfPairs)
+    public void GeneratePairs(int numberOfPairs)
     {
         if (generatorArea != null)
         {
             int i;
+            
+
             for (i = 0; i < numberOfPairs; i++)
             {
                 //var p = 1;
@@ -54,18 +56,50 @@ public class GameController : MonoBehaviour
                 for (n = 0; n < 2; n++)
                 {
                     var posHandicap = new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), Random.Range(-2f, 2f));
-
+                    
                     Instantiate(objects[index], generatorArea.position + posHandicap, Quaternion.Euler(Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f), Random.Range(-180.0f, 180.0f)), objectsParent.transform);
+                    
                 }
             }
         }
     }
 
+    public void StartLevel()
+    {
+        numberOfActive = 0;
+        GeneratePairs(pairGenNumber);
+        SetTime(levelTime);
+        StartCoroutine(Countdown());
+    }
+
+    public void DeletePairs()
+    {
+        int i;// = activeObjects.Length;
+        for (i=0; i<activeObjects.Length; i++)
+        {
+            if (activeObjects[i] != null)
+            {
+                Destroy(activeObjects[i]);
+                Debug.Log("object deleted via DeletePairs");
+            }
+        }
+    }
+
+    public void SetTime(int time)
+    {
+        currentTime = time;
+    }
+
+    public void AddTime(int time)
+    {
+        currentTime += time;
+        StartCoroutine(Countdown());
+    }
     void Update()
     {
         //update time
-        var min = Mathf.Floor(levelTime / 60);
-        var sec = levelTime - min * 60;
+        var min = Mathf.Floor(currentTime / 60);
+        var sec = currentTime - min * 60;
 
         /*if (levelTime > 0)
         {
@@ -79,10 +113,9 @@ public class GameController : MonoBehaviour
         //StartCoroutine(Countdown(1));
         timeText.text = string.Format("{0:00}:{1:00}", min, sec);//min + " : " + sec;
 
-        if (pairGenNumber - 1 == levelScore)
+        if (pairGenNumber == levelScore)
         {
-            winScreen.SetActive(true);
-            bkg.SetActive(true);
+            manager.ShowWin();
         }
     }
 
@@ -90,18 +123,17 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        if (levelTime > 0)
+        if (currentTime > 0)
         {
 
-            levelTime -= 1;
+            currentTime -= 1;
             StartCoroutine(Countdown());
 
         }
         else
         {
             //stop time and make time is out screen active
-            timeIsOutScreen.SetActive(true);
-            bkg.SetActive(true);
+            manager.ShowNoTime();
         }
         
     }

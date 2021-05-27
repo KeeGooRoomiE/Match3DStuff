@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 7856923923582740015}
   - component: {fileID: 2495862842029670201}
   - component: {fileID: 6763363106309833955}
+  - component: {fileID: 4331580367060391682}
   m_Layer: 0
   m_Name: DumpTruck
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,6 +230,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1311555855997995921, guid: 9ce18e6f3a8d4ea418f174de49f5c8c8, type: 3}
+--- !u!114 &4331580367060391682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4445677240220643210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &4699858749919065433
 GameObject:
   m_ObjectHideFlags: 0

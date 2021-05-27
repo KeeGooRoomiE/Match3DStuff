@@ -339,9 +339,10 @@ GameObject:
   - component: {fileID: 2484427037272662593}
   - component: {fileID: 4807674203545110257}
   - component: {fileID: 4269404945906046305}
+  - component: {fileID: -1251581627435044774}
   m_Layer: 0
   m_Name: ToyStacker
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,6 +475,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5299606812721820092, guid: 017e5267fc5f3244cb78c675596c51e8, type: 3}
+--- !u!114 &-1251581627435044774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495732527075378238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &8068673158946848654
 GameObject:
   m_ObjectHideFlags: 0

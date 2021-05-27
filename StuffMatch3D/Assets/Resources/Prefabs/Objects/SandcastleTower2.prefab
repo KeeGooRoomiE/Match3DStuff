@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 6636521694137880585}
   - component: {fileID: 2990940404953308478}
   - component: {fileID: 925697519305373239}
+  - component: {fileID: -1866753023755099377}
   m_Layer: 0
   m_Name: SandcastleTower2
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9136774528885077359, guid: d2cb58ae4ef86ec4c89e65860615e471, type: 3}
+--- !u!114 &-1866753023755099377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379961425766844839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

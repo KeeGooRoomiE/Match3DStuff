@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 6978072780231744032}
   - component: {fileID: 2605753352135760162}
   - component: {fileID: 8510415750122004209}
+  - component: {fileID: -2573434608731115921}
   m_Layer: 0
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9115578056552125752, guid: 32a326d67eb195c45a31594b2f527b94, type: 3}
+--- !u!114 &-2573434608731115921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882481616194354138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

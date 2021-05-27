@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1285034784355714524}
   - component: {fileID: 4432636462834524914}
   - component: {fileID: 197813494235960893}
+  - component: {fileID: -3075944386495790147}
   m_Layer: 0
   m_Name: Shovel
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 633518336574380839, guid: 78083257c4b755f4e991c279375b4d0a, type: 3}
+--- !u!114 &-3075944386495790147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884507947893834180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

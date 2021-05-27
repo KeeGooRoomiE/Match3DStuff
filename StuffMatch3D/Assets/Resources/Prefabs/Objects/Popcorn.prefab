@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8223686330159591405}
   - component: {fileID: 2481643130091649074}
   - component: {fileID: 4399708785439833375}
+  - component: {fileID: -6621060241615779324}
   m_Layer: 0
   m_Name: Popcorn
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MonoBehaviour:
   self: {fileID: 0}
   objectId: 112
   isSelected: 0
+--- !u!114 &-6621060241615779324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051501050994281423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

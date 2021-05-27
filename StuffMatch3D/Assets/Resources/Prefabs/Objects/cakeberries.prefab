@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8737850382853127186}
   - component: {fileID: 5551126110996420729}
   - component: {fileID: 887674664602960595}
+  - component: {fileID: -7967194391467047383}
   m_Layer: 0
   m_Name: cakeberries
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +94,20 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 94fcb494f83e84495b1549eeb99080c1, type: 3}
+--- !u!114 &-7967194391467047383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207405982485070806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &7910470253632315202
 GameObject:
   m_ObjectHideFlags: 0

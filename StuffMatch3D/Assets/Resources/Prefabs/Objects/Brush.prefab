@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 7593349864046438379}
   - component: {fileID: 6039667224987609915}
   - component: {fileID: 2053924151481691558}
+  - component: {fileID: 8414256713601297221}
   m_Layer: 0
   m_Name: Brush
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a9ce03d9aed4906a4b00bcca25f384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8414256713601297221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050555661563888536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1527460345465676141}
   - component: {fileID: 4410408230556491681}
   - component: {fileID: 1764707053663605916}
+  - component: {fileID: -2075696674547350780}
   m_Layer: 0
   m_Name: Dinosaur
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -140630977037190727, guid: 9ecbe2ce35d7e884f9a5849bf0ff22c4, type: 3}
+--- !u!114 &-2075696674547350780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954692524850777992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

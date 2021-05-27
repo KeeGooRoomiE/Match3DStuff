@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8074370838627754431}
   - component: {fileID: 1810502449182269583}
   - component: {fileID: 829367573918612092}
+  - component: {fileID: -6598313115673673963}
   m_Layer: 0
   m_Name: CW
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +146,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a9ce03d9aed4906a4b00bcca25f384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6598313115673673963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515087878459696649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

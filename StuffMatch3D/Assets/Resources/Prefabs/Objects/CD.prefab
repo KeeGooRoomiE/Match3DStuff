@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8100278034113174242}
   - component: {fileID: 2194411567606578928}
   - component: {fileID: 385946267092959830}
+  - component: {fileID: -382726863120512107}
   m_Layer: 0
   m_Name: CD
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +146,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1213969479700370510, guid: f202298ccb5d7f145a673ac42878b49d, type: 3}
+--- !u!114 &-382726863120512107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572375251652925197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}

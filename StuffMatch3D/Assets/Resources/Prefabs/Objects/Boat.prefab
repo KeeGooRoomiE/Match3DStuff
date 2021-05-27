@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8526376293698431769}
   - component: {fileID: 1653957447885847257}
   - component: {fileID: 4779404234089532836}
+  - component: {fileID: -3797907035563944794}
   m_Layer: 0
   m_Name: Boat
-  m_TagString: Untagged
+  m_TagString: Toy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2518799095586921517, guid: f87d06c3b1b0e9148b74e9d00ee58d90, type: 3}
+--- !u!114 &-3797907035563944794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6867921363513201586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2be61d2b90c48bba16859bf007ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
