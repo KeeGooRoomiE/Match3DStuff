@@ -9348,6 +9348,7 @@ GameObject:
   - component: {fileID: 1471756575}
   - component: {fileID: 1471756574}
   - component: {fileID: 1471756576}
+  - component: {fileID: 1471756577}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -9408,6 +9409,29 @@ MonoBehaviour:
   win: {fileID: 372700913}
   fail: {fileID: 1849479580}
   shop: {fileID: 1653201417}
+--- !u!114 &1471756577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471756573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15419cf2105840f685221b07e2cf02d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 1728226343}
+  levelNumber: 0
+  levelSet:
+  - isTutorial: 0
+    LevelTime: 0
+    PairNumber: 0
+    LevelNumber: 0
+  - isTutorial: 0
+    LevelTime: 0
+    PairNumber: 0
+    LevelNumber: 0
 --- !u!1 &1502466477
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,9 +11184,9 @@ MonoBehaviour:
   - {fileID: 6886085166123484176, guid: 872702e11fdf440b9ba15706d95c4db5, type: 3}
   - {fileID: 550392391165647309, guid: 627b07b590d02469cb8290058220f36d, type: 3}
   - {fileID: 3479788761111901510, guid: 0d1b0dd3c541e47c0a8c34a2999d8d89, type: 3}
-  - {fileID: 4207405982485070806, guid: 19888e93af9b645018278999b0e4053c, type: 3}
-  - {fileID: 7633492750079639432, guid: daabec603d31a4779bea194cf585ced0, type: 3}
-  - {fileID: 1037960882132086404, guid: 77a7ae0d2ae914006b42a87779e20387, type: 3}
+  - {fileID: 6350289218921189357, guid: 929ff84e202904ad899a4ba4886c6b49, type: 3}
+  - {fileID: 6350289218921189357, guid: 929ff84e202904ad899a4ba4886c6b49, type: 3}
+  - {fileID: 6350289218921189357, guid: 929ff84e202904ad899a4ba4886c6b49, type: 3}
   - {fileID: 292701903875330494, guid: c4e7c9fb0abb144e79a1c686de09fe01, type: 3}
   - {fileID: 5916147286076360989, guid: 2ab6523b4e9b342af8e1732da5af624f, type: 3}
   - {fileID: 3336961891005392494, guid: e669d9ede931e4ea5804c0a447291ea4, type: 3}
